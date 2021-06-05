@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="345dp"
         android:layout_height="127dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="248dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,41 +40,23 @@
         android:layout_height="113dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
         app:srcCompat="@drawable/icons8_greentech" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign in"
+        android:backgroundTint="@color/cardview_light_background"
         android:shadowRadius="3"
+        android:text="Sign in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintVertical_bias="0.188" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="195dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="44dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="203dp"
-        android:layout_height="52dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.352" />
 </androidx.constraintlayout.widget.ConstraintLayout>

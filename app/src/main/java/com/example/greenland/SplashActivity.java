@@ -14,17 +14,17 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        splashprogress =findViewById(R.id.progressBar);
-        ObjectAnimator.ofInt(splashprogress,"progress", 100).setDuration(10000).start();
-        new Handler().postDelayed(new Runnable() {
+        splashprogress =findViewById(R.id.Splash_progressBar);
+        ObjectAnimator.ofInt(splashprogress,"progress", 100).setDuration(5000).start();
+        new Handler().postDelayed(new Thread(){
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, Slide.class);
                 startActivity(intent);
                 finish();
 
             }
-        }, 10000);
+        }, 5000);
 
     }
 }
